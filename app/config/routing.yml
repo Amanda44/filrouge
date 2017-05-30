@@ -1,0 +1,7 @@
+fishblock_user:
+    resource: "@FishblockUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fishblock_platform:
+    resource: "@FishblockPlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform 

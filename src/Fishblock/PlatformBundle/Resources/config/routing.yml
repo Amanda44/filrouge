@@ -1,0 +1,32 @@
+fishblock_platform_home:
+    path:    /{page} 
+    defaults:  
+        _controller: FishblockPlatformBundle:Show:index 
+        page:    1
+    requirements:
+        page:  \d*
+
+fishblock_platform_view:
+    path:    /show/{id}
+    defaults:
+        _controller: FishblockPlatformBundle:Show:view 
+    requirements: 
+        id:    \d+
+
+fishblock_platform_add:
+    path:   /add 
+    defaults:
+        _controller: FishblockPlatformBundle:Show:add 
+
+fishblock_platform_edit:
+    path:    /edit/{id}
+    defaults:
+        _controller: FishblockPlatformBundle:Show:edit 
+    requirements:
+        id: \d+
+
+fishblock_platform_delete:
+    path:   /delete/{id}
+    defaults:
+        _controller: FishblockPlatformBundle:Show:delete 
+        id: \d+

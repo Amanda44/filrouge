@@ -1,0 +1,6 @@
+fishblock_user_homepage:
+    path:     /
+    defaults: { _controller: FishblockUserBundle:Default:index }
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
