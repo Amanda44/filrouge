@@ -28,5 +28,6 @@ fishblock_platform_edit:
 fishblock_platform_delete:
     path:   /delete/{id}
     defaults:
-        _controller: FishblockPlatformBundle:Show:delete 
+        _controller: FishblockPlatformBundle:Show:delete
+    requirements:
         id: \d+
